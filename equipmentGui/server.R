@@ -58,6 +58,10 @@ shinyServer(function(input, output, session) {
     fieldPlan<-reactive({
         input$fieldPlan
     })
+    
+    redcapID<-reactive(
+      input$redcapID
+    )
 
 
         ### Comments Text Input ------------------------------------------------
@@ -73,6 +77,7 @@ shinyServer(function(input, output, session) {
                 start_date = as.character(stDate()),
                 end_date = as.character(edDate()),
                 field_plan = fieldPlan(),
+                redcapID = redcapID(),
                 comments = bookingComments()
                 )
     )
@@ -91,6 +96,7 @@ shinyServer(function(input, output, session) {
             user_id = as.integer(userId()),
             start_date = as.character(stDate()),
             end_date = as.character(edDate()),
+            redcap_id = redcapID(),
             field_plan = fieldPlan(),
             comments = bookingComments()
             )
@@ -139,7 +145,12 @@ shinyServer(function(input, output, session) {
             left_join(user(), by = 'user_id') %>% 
             left_join(dept(), by = 'dept_id') %>% 
             as_data_frame() %>% 
-            select('Booking ID' = booking_id,User = fullName,Department=dept_name, 'Start Date'=start_date, 'End Date'=end_date ) %>%
+            select('Booking ID' = booking_id
+                   ,'Redcap ID' = redcap_id
+                   ,User = fullName
+                   ,Department=dept_name
+                   ,'Start Date'=start_date
+                   ,'End Date'=end_date ) %>%
             arrange(desc('Booking ID'))
         
     })

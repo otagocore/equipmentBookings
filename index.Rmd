@@ -1,5 +1,5 @@
 ---
-title: "Marne Scince Equipment Bookings"
+title: "Marne Science Equipment Bookings"
 output:
   flexdashboard::flex_dashboard:
     orientation: rows
@@ -82,7 +82,11 @@ data<- booking %>%
            col.color = "color",
            show_labels = F,
            linewidth = 20,
-           title = "Marine Science Equipment Bookings")
+           title = "Marine Science Equipment Bookings") %>% 
+    hc_rangeSelector(
+    verticalAlign = "bottom",
+    selected = 4
+  )
 
 
 data #%>%

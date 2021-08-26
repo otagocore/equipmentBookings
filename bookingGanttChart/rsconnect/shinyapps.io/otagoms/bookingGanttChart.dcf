@@ -1,0 +1,13 @@
+name: bookingGanttChart
+title: bookingGanttChart
+username:
+account: otagoms
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4509667
+bundleId: 4939718
+url: https://otagoms.shinyapps.io/bookingGanttChart/
+when: 1629349117.15437
+lastSyncTime: 1629349117.15439
+asMultiple: FALSE
+asStatic: FALSE

@@ -39,24 +39,32 @@ shinyUI(
 
                  
                  fluidRow(
-                     column(width = 4,
+                     column(width = 3,
                         dateInput(inputId='bookingStDate',
                                        label = 'Start of the Booking')
-                        ),
-                     column(width = 4,
+                        ),#end column
+                     
+                     column(width = 3,
                         dateInput(inputId='bookingEdDate',
                                        label = 'End of the Booking')
-                        ),
+                        ),#end column
 
 ### Text entry for Field Plan ID --------------------------------------------
 
                      
-                     column(width = 4,
+                     column(width = 3,
                         textInput(inputId='fieldPlan',
                                   label = 'Enter Field Plan',
                                   placeholder = 'Enter Feild Plan Id')
-                        )
-                     ),
+                        ),#end column
+                     
+
+                    column(width = 3,
+                           textInput(inputId = 'redcapID',
+                                     label = 'Redcap ID',
+                                     placeholder = 'Enter Redcap ID')
+                           )#end column
+                      ),#end fluid row
 
 ### Text Entry for Booking comments -----------------------------------------
 
