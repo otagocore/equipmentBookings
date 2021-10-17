@@ -5,10 +5,10 @@ account: otagoms
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 4514000
-bundleId: 4946684
+bundleId: 4965933
 url: https://otagoms.shinyapps.io/msEquipBookings/
-when: 1629502592.3889
-lastSyncTime: 1629502592.38893
+when: 1629956390.71745
+lastSyncTime: 1629956390.71748
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: _config.yml|.RData|bookingGanttChart/equipment.db|bookingGanttChart/global.R|bookingGanttChart/rsconnect/shinyapps.io/otagoms/bookingGanttChart.dcf|bookingGanttChart/server.R|bookingGanttChart/ui.R|equipment|equipmentGui/global.R|equipmentGui/server.R|equipmentGui/ui.R|gitcred.R|index.html|index.Rmd
